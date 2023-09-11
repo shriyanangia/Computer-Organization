@@ -1,0 +1,29 @@
+Testing files...
+	PASSED test: MOV imm test
+Format is student then expected
+R0 Value	R1 Value	R2 Value	LR (R14) Value	SP (R13) Value	Time Step	Fetch Addr	Instruction
+0	0	0	0	0	0	0	e3a00001
+0	0	0	0	0	0	0	e3a00001
+1	0	0	0	0	1	4	e3a01002
+1	0	0	0	0	1	4	e3a01002
+1	4	0	0	0	2	8	e0802001
+1	2	0	0	0	2	8	e0802001
+	FAILED test: MOV ADD register test (Did not match expected output (check ./mov-add-reg.circ, also check test.py if this is a test you wrote))
+	PASSED test: MOV ADD imm test
+Format is student then expected
+R0 Value	R1 Value	R2 Value	LR (R14) Value	SP (R13) Value	Time Step
+0	0	0	0	0	0
+0	0	0	0	0	0
+b	0	0	0	0	1
+b	0	0	0	0	1
+b	b000	0	0	0	2
+b	16	0	0	0	2
+	FAILED test: CMP for conditional adds test (Did not match expected output (check ./cond-add.circ, also check test.py if this is a test you wrote))
+Format is student then expected
+R0 Value	R1 Value	R2 Value	LR (R14) Value	SP (R13) Value	Time Step	Fetch Addr	Instruction
+0	0	0	0	0	0	0	ea000001
+0	0	0	0	0	0	0	ea000001
+1	0	0	0	0	1	4	e3a0000a
+0	0	0	0	0	1	c	e3a0201e
+	FAILED test: B forward test (Did not match expected output (check ./branch-forward.circ, also check test.py if this is a test you wrote))
+Passed 2/5 tests
